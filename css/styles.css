@@ -1,1 +1,82 @@
-# stylesheet
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway:200,300,400,500,700,900');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*typography
+====================*/
+
+.title {
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 9rem;
+}
+
+.subtitle {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.subtitle span {
+	font-size: 0.8em;
+	font-weight: 300;
+	display: block;
+}
+
+/*icons
+====================*/
+
+.icon {
+	padding: 0.25rem;
+	font-size: 3rem;
+}
+
+/*hero
+====================*/
+
+#home-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ryan_hero.jpg");
+	padding: 12rem;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#home-hero i {
+	display: inline-block;
+	font-size: 1.5rem;
+	margin-top: 17rem;
+	padding: 0.3em;
+	/*background-color: pink;*/
+	opacity: 0.3;
+}
+
+#home-hero i:hover,
+#home-hero i:focus {
+	opacity: 1;
+}
+
+/*bio
+====================*/
+
+#home-bio img {
+	height: 30rem;
+}
