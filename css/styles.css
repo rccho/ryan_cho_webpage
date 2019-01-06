@@ -24,11 +24,11 @@ img {
 
 .title {
 	font-family: 'Bilbo Swash Caps', cursive;
-	font-size: 9rem;
+	font-size: 4.7rem;
 }
 
 .subtitle {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 }
 
@@ -38,11 +38,31 @@ img {
 	display: block;
 }
 
+@media (max-width: 23rem) {
+	.title {
+		font-size: 4rem;
+	}
+
+	.subtitle {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 55rem) {
+	.title {
+		font-size: 9rem;
+	}
+
+	.subtitle {
+		font-size: 2rem;
+	}
+}
+
 /*icons
 ====================*/
 
 .icon {
-	padding: 0.25rem;
+	padding: 0.25em;
 	font-size: 3rem;
 }
 
@@ -51,22 +71,25 @@ img {
 
 #home-hero {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ryan_hero.jpg");
-	padding: 12rem;
-	height: 100vh;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+	height: 100vh;
+
 	color: #FFFFFF;
 	text-align: center;
+	padding-top: 35vh;
 }
 
 #home-hero i {
 	display: inline-block;
 	font-size: 1.5rem;
-	margin-top: 17rem;
-	padding: 0.3em;
-	/*background-color: pink;*/
+	padding: 0.2em;
 	opacity: 0.3;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 #home-hero i:hover,
