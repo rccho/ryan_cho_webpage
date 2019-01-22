@@ -38,17 +38,28 @@ img {
 	display: block;
 }
 
-@media (max-width: 23rem) {
+h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 1rem 0;
+	/*text-align: center;*/
+}
+
+p {
+	font-weight: 300;
+}
+
+@media (min-width: 30rem) {
 	.title {
-		font-size: 4rem;
+		font-size: 6rem;
 	}
 
 	.subtitle {
-		font-size: 1.2rem;
+		font-size: 1.7rem;
 	}
 }
 
-@media (min-width: 55rem) {
+@media (min-width: 50rem) {
 	.title {
 		font-size: 9rem;
 	}
@@ -62,8 +73,8 @@ img {
 ====================*/
 
 .icon {
-	padding: 0.25em;
 	font-size: 3rem;
+	padding: 0.25em;
 }
 
 /*hero
@@ -73,7 +84,6 @@ img {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ryan_hero.jpg");
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
 	height: 100vh;
 
 	color: #FFFFFF;
@@ -82,10 +92,10 @@ img {
 }
 
 #home-hero i {
-	display: inline-block;
 	font-size: 1.5rem;
-	padding: 0.2em;
 	opacity: 0.3;
+	display: inline-block;
+	padding: 0.2em;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -97,9 +107,53 @@ img {
 	opacity: 1;
 }
 
+@media (min-width: 50rem) {
+	#home-hero {
+		background-attachment: fixed;
+	}
+}
+
 /*bio
 ====================*/
 
-#home-bio img {
-	height: 30rem;
+#home-bio {
+	text-align: center;
+	padding: 3em 0;
 }
+
+.bio-img {
+	background-image: url("../images/ryan_profile.jpg");
+	background-size: 100vw;
+	background-position: center;
+
+	border-radius: 50%;
+	width: 70vw;
+	height: 70vw;
+	margin: 0 auto;
+}
+
+@media (min-width: 50rem) {
+	#home-bio {
+		text-align: left;
+		/*padding: 3em 1em;*/
+		height: 26rem;
+	}
+
+	.bio-img {
+		width: 20rem;
+		height: 20rem;
+		background-size: 30em;
+
+		position: absolute;
+		left: 5rem;
+	}
+
+	.bio-text {
+		padding: 1em 3rem;
+		margin-left: 25rem;
+	}
+}
+
+/*footer
+====================*/
+
