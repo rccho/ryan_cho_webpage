@@ -171,9 +171,66 @@ p {
 ====================*/
 
 #home-projects {
+	text-align: center;
+}
 
+.project {
+	margin: 0;
+	position: relative;
+}
+
+.project img {
+	display: block;
+}
+
+.project-desc {
+	position: absolute;
+	z-index: 100;
+	left: 5em;
+	right: 5em;
+	/*left: 0;*/
+	/*right: 0;*/
+	padding: 0.5em;
+	top: 4em;
+	/*top: 0;*/
+	/*bottom: 0;*/
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 /*footer
 ====================*/
 
+footer {
+	background: #24231F;
+	color: white;
+	padding: 1em;
+	padding-bottom: 4em;
+}
+
+.social-media{
+	padding: 0.5em;
+}
+
+.social-media i {
+	font-size: 1.5em;
+	color: #8A8A8A;
+	padding: 0.5em;
+}
+
+.contact {
+	padding: 0.5em;
+}
+
+.email {
+	color: #8A8A8A;
+	padding: 0.5em;
+}
+
+.copyright {
+	color: #8A8A8A;
+	font-size: 0.7em;
+	position: fixed;
+	right: 0.3em;
+	bottom: 0.3em;
+}
