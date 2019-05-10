@@ -198,18 +198,46 @@ p {
 	background: rgba(0, 0, 0, 0.5);
 }
 
+@media (min-width: 50rem) {
+	#home-projects h1 {
+		font-size: 4rem;
+		padding-bottom: 0.7em;
+	}
+
+	.project {
+		width: 33.333%;
+		display: inline-block;
+	}
+
+	.project img {
+		max-height: 100%;
+	}
+}
+
+/*PSA
+====================*/
+
+.PSA {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 500;
+	padding: 1em;
+}
+
 /*footer
 ====================*/
 
 footer {
 	background: #24231F;
 	color: white;
-	padding: 1em;
-	padding-bottom: 4em;
+	/*padding: 1em;*/
+	padding-bottom: 1.3em;
 }
 
 .social-media{
-	padding: 0.5em;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 }
 
 .social-media i {
@@ -219,7 +247,7 @@ footer {
 }
 
 .contact {
-	padding: 0.5em;
+	padding: 1.5em;
 }
 
 .email {
@@ -230,7 +258,8 @@ footer {
 .copyright {
 	color: #8A8A8A;
 	font-size: 0.7em;
-	position: fixed;
-	right: 0.3em;
-	bottom: 0.3em;
+	float: right;
+	margin-right: 0.3em;
+	/*right: 0.3em;*/
+	/*bottom: 0.3em;*/
 }
