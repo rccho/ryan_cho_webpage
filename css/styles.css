@@ -198,6 +198,32 @@ p {
 	background: rgba(0, 0, 0, 0.5);
 }
 
+@media (min-width: 50rem) {
+	#home-projects h1 {
+		font-size: 4rem;
+		padding-bottom: 0.7em;
+	}
+
+	.project {
+		width: 33.333%;
+		display: inline-block;
+	}
+
+	.project img {
+		max-height: 100%;
+	}
+}
+
+/*PSA
+====================*/
+
+.PSA {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 500;
+	padding: 1em;
+}
+
 /*footer
 ====================*/
 
