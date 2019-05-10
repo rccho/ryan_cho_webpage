@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway:200,300,400,500,700,900');
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway:200,300,400,500,700,900');
 
 * {
 	box-sizing: border-box;
@@ -23,35 +24,30 @@ img {
 ====================*/
 
 .title {
-	font-family: 'Bilbo Swash Caps', cursive;
-	font-size: 4.7rem;
+	font-weight: 700;
+	font-size: 3rem;
 }
 
 .subtitle {
-	font-size: 1.5rem;
-	font-weight: 600;
-}
-
-.subtitle span {
-	font-size: 0.8em;
+	font-size: 1.2em;
 	font-weight: 300;
-	display: block;
 }
 
 h1 {
+	/*font-family: 'Merriweather';*/
 	font-size: 2rem;
-	font-weight: 600;
+	font-weight: 500;
 	margin: 1rem 0;
-	/*text-align: center;*/
 }
 
 p {
 	font-weight: 300;
 }
 
+/*tablet*/
 @media (min-width: 30rem) {
 	.title {
-		font-size: 6rem;
+		font-size: 5rem;
 	}
 
 	.subtitle {
@@ -59,13 +55,15 @@ p {
 	}
 }
 
+/*desktop*/
 @media (min-width: 50rem) {
 	.title {
-		font-size: 9rem;
+		font-size: 8rem;
 	}
 
 	.subtitle {
-		font-size: 2rem;
+		padding-left: 0.1em;
+		font-size: 3rem;
 	}
 }
 
@@ -84,32 +82,47 @@ p {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ryan_hero.jpg");
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
+	height: 80vh;
 
-	color: #FFFFFF;
 	text-align: center;
+	color: #FFFFFF;
 	padding-top: 35vh;
 }
 
-#home-hero i {
-	font-size: 1.5rem;
-	opacity: 0.3;
-	display: inline-block;
+/*menu icon*/
+#home-hero .menu {
+	font-size: 1.5em;
 	padding: 0.2em;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+
+	text-align: right;
+	top: 1;
+	right: 1;
 }
 
-#home-hero i:hover,
-#home-hero i:focus {
-	opacity: 1;
+#home-hero .menu:hover {
+	opacity: 0.3;
 }
 
+
+#home-hero .menu:focus {
+	opacity: 0.3;
+	/*background-color: (rgba(255, 255, 255, 0.5));*/
+}
+
+/*tablet*/
+@media (min-width: 30rem) {
+	#home-hero {
+		height: 90vh;
+	}
+}
+
+/*desktop*/
 @media (min-width: 50rem) {
 	#home-hero {
+		height: 100vh;
 		background-attachment: fixed;
+		padding-top: 50vh;
+		text-align: left;
 	}
 }
 
@@ -154,6 +167,70 @@ p {
 	}
 }
 
+/*projects
+====================*/
+
+#home-projects {
+	text-align: center;
+}
+
+.project {
+	margin: 0;
+	position: relative;
+}
+
+.project img {
+	display: block;
+}
+
+.project-desc {
+	position: absolute;
+	z-index: 100;
+	left: 5em;
+	right: 5em;
+	/*left: 0;*/
+	/*right: 0;*/
+	padding: 0.5em;
+	top: 4em;
+	/*top: 0;*/
+	/*bottom: 0;*/
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+}
+
 /*footer
 ====================*/
 
+footer {
+	background: #24231F;
+	color: white;
+	padding: 1em;
+	padding-bottom: 4em;
+}
+
+.social-media{
+	padding: 0.5em;
+}
+
+.social-media i {
+	font-size: 1.5em;
+	color: #8A8A8A;
+	padding: 0.5em;
+}
+
+.contact {
+	padding: 0.5em;
+}
+
+.email {
+	color: #8A8A8A;
+	padding: 0.5em;
+}
+
+.copyright {
+	color: #8A8A8A;
+	font-size: 0.7em;
+	position: fixed;
+	right: 0.3em;
+	bottom: 0.3em;
+}
