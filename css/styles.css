@@ -20,18 +20,9 @@ img {
 	margin: 0 auto;
 }
 
+
 /*typography
 ====================*/
-
-.title {
-	font-weight: 700;
-	font-size: 3rem;
-}
-
-.subtitle {
-	font-size: 1.2em;
-	font-weight: 300;
-}
 
 h1 {
 	/*font-family: 'Merriweather';*/
@@ -44,28 +35,6 @@ p {
 	font-weight: 300;
 }
 
-/*tablet*/
-@media (min-width: 30rem) {
-	.title {
-		font-size: 5rem;
-	}
-
-	.subtitle {
-		font-size: 1.7rem;
-	}
-}
-
-/*desktop*/
-@media (min-width: 50rem) {
-	.title {
-		font-size: 8rem;
-	}
-
-	.subtitle {
-		padding-left: 0.1em;
-		font-size: 3rem;
-	}
-}
 
 /*icons
 ====================*/
@@ -75,38 +44,31 @@ p {
 	padding: 0.25em;
 }
 
+
 /*hero
 ====================*/
 
 #home-hero {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ryan_hero.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/ryan_hero.jpg");
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 	height: 80vh;
 
 	text-align: center;
 	color: #FFFFFF;
-	padding-top: 35vh;
+	position: relative;
 }
 
-/*menu icon*/
-#home-hero .menu {
-	font-size: 1.5em;
-	padding: 0.2em;
-
-	text-align: right;
-	top: 1;
-	right: 1;
+.title {
+	font-weight: 700;
+	font-size: 3rem;
+	padding-top: 4.5em;
 }
 
-#home-hero .menu:hover {
-	opacity: 0.3;
-}
-
-
-#home-hero .menu:focus {
-	opacity: 0.3;
-	/*background-color: (rgba(255, 255, 255, 0.5));*/
+.subtitle {
+	font-size: 1.2rem;
+	font-weight: 300;
 }
 
 /*tablet*/
@@ -114,23 +76,43 @@ p {
 	#home-hero {
 		height: 90vh;
 	}
+
+	.title {
+		font-size: 5rem;
+		padding-top: 3em;
+	}
+
+	.subtitle {
+		font-size: 1.7rem;
+	}
 }
 
 /*desktop*/
 @media (min-width: 50rem) {
 	#home-hero {
 		height: 100vh;
-		background-attachment: fixed;
-		padding-top: 50vh;
 		text-align: left;
+		background-position: center;
+	}
+
+	.title {
+		font-size: 7rem;
+		padding-top: 60vh;
+	}
+
+	.subtitle {
+		padding-left: 0.1em;
+		font-size: 3rem;
 	}
 }
+
 
 /*bio
 ====================*/
 
 #home-bio {
 	text-align: center;
+	background: white;
 	padding: 3em 0;
 }
 
@@ -145,10 +127,20 @@ p {
 	margin: 0 auto;
 }
 
+
+/*tablet*/
+@media (min-width: 30rem) {
+	.bio-img {
+		width: 21rem;
+		height: 21rem;
+		background-size: 31rem;
+	}
+}
+
+/*desktop*/
 @media (min-width: 50rem) {
 	#home-bio {
 		text-align: left;
-		/*padding: 3em 1em;*/
 		height: 26rem;
 	}
 
@@ -167,11 +159,13 @@ p {
 	}
 }
 
+
 /*projects
 ====================*/
 
 #home-projects {
 	text-align: center;
+	background: white;
 }
 
 .project {
@@ -214,6 +208,7 @@ p {
 	}
 }
 
+
 /*PSA
 ====================*/
 
@@ -223,6 +218,7 @@ p {
 	font-weight: 500;
 	padding: 1em;
 }
+
 
 /*footer
 ====================*/
